@@ -23,6 +23,7 @@ export default function PersonList({ people, onSelect }: Props) {
           <Avatar
             width={80}
             height={80}
+            alt={person.name}
             src={`https://starwars-visualguide.com/assets/img/characters/${extractLastSegment(
               person.url
             )}.jpg`}
