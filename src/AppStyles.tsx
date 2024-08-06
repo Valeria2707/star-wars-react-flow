@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   min-height: 100vh;
-  background-image: url("/public/images/star-scy.jpeg");
+  background-image: url("/images/star-scy.jpeg");
   background-size: cover;
   background-position: center;
   color: white;

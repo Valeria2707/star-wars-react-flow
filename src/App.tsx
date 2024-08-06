@@ -9,7 +9,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <Container>
         <Logo
-          src="/public/icons/star-wars-logo.svg"
+          src="/icons/star-wars-logo.svg"
           alt="Star Wars Logo"
           width="200"
           height="200"
