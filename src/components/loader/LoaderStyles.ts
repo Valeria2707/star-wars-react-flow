@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { BASIC } from "../../constants/colors";
 
 const spin = keyframes`
   0% { transform: rotate(0deg); }
@@ -16,8 +17,8 @@ export const Container = styled.div`
 export const Spinner = styled.div`
   width: 70px;
   height: 70px;
-  border: 7px solid rgba(255, 255, 255, 0.3);
-  border-top: 4px solid #fff;
+  border: 7px solid ${BASIC[20]};
+  border-top: 4px solid ${BASIC[0]};
   border-radius: 50%;
   animation: ${spin} 1s linear infinite;
 `;

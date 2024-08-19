@@ -7,7 +7,7 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Container>
+      <Container data-testid="star-wars-widget">
         <Logo
           src="/icons/star-wars-logo.svg"
           alt="Star Wars Logo"

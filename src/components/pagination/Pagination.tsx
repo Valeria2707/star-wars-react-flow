@@ -1,4 +1,4 @@
-import { getDisplayedPages } from "../../helpers/pagination";
+import { getDisplayedPages } from "../../utils/pagination";
 import { Container, PageButton, NavButton } from "./PaginationStyles";
 
 type Props = {

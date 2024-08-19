@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BASIC } from "../../constants/colors";
 
 export const Container = styled.div`
   display: grid;
@@ -25,10 +26,10 @@ export const Container = styled.div`
 export const Card = styled.div`
   color: white;
   padding: 30px;
-  background: rgba(0, 0, 0, 0.7);
+  background: ${BASIC[70]};
   border-radius: 10px;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid ${BASIC[10]};
   display: flex;
   flex-direction: column;
   gap: 10px;

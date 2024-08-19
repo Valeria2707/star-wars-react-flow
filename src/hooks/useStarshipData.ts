@@ -9,7 +9,11 @@ const useStarshipData = (selectedPerson: Person | null) => {
           queryFn: () => fetch(starshipUrl).then((res) => res.json()),
         }))
       : [],
-  });
+  }).map((query) => ({
+    data: query.data,
+    isError: query.isError,
+    error: query.error,
+  }));
 };
 
 export { useStarshipData };

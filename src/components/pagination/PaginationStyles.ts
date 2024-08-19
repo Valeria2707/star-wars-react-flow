@@ -1,5 +1,6 @@
 // PaginationStyles.tsx
 import styled from "styled-components";
+import { BASIC, ORANGE } from "../../constants/colors";
 
 export const Container = styled.div`
   display: flex;
@@ -15,8 +16,8 @@ export const PageButton = styled.button<{ $isCurrent?: boolean }>`
   font-size: 16px;
   font-weight: ${(props) => (props.$isCurrent ? 600 : 400)};
   border-radius: 10px;
-  color: "black";
-  background: ${(props) => (props.$isCurrent ? "#FFC107" : "white")};
+  color: ${BASIC[100]};
+  background: ${(props) => (props.$isCurrent ? ORANGE[80] : BASIC[0])};
   margin: 0 3px;
   &:disabled {
     cursor: default;

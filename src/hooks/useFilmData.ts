@@ -9,7 +9,11 @@ const useFilmData = (selectedPerson: Person | null) => {
           queryFn: () => fetch(filmUrl).then((res) => res.json()),
         }))
       : [],
-  });
+  }).map((query) => ({
+    data: query.data,
+    isError: query.isError,
+    error: query.error,
+  }));
 };
 
 export { useFilmData };
